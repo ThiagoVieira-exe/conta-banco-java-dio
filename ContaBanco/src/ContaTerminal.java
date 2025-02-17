@@ -14,15 +14,15 @@ public class ContaTerminal {
     String agencia = sc.next();
     sc.nextLine(); // Consome a quebra de linha deixada pelo next()
 
-    System.out.println("Agora digite seu Nome Completo");
-    String nomeCompleto = sc.nextLine(); // Agora funcionará corretamente
+    System.out.println("Agora digite seu Nome");
+    String nome = sc.nextLine(); // Agora funcionará corretamente
 
     System.out.println("Agora digite seu Saldo");
     double saldo = sc.nextDouble();
 
     System.out.printf(
         "Olá %s, obrigado por criar uma conta em nosso banco, sua agência é %s, conta %d e seu saldo %.2f já está disponível para saque",
-        nomeCompleto, agencia, conta, saldo);
+        nome, agencia, conta, saldo);
 
     sc.close();
   }
